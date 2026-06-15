@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Base</title>
+  <!-- Tailwind source-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind local config -->
+  <script src="scripts/tailwindConfig.js"></script>
+
+  <!-- Navbar Hamburger Button Script -->
+  <script src="scripts/hamburgerButton.js"></script>
+  <!-- Navbar button highlighting script -->
+  <script src="scripts/navbarHighlighting.js"></script>
+  <!-- Carousel Script -->
+  <script src="scripts/carousel.js"></script>
+
+  <!-- Google font api links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Google Font families URL -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- CSS for Headings and Carousel -->
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="bg-dim-white">
+  <!-- ############################################################### -->
+  <!-- ########################### HEADER ############################ -->
+  <header class="bg-dim-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center py-4">
+      <a href="index.html" class="flex items-center">
+        <img src="images/navbarLogoFull.svg" alt="Waikato Women In STEM" class="h-10 w-auto object-contain">
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 uppercase text-sm tracking-wider">
+          <li><a class="nav-link hover:text-middle-purple transition" href="index.html">Home</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="pages/about.html">About Us</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="pages/events.html">Events</a>
+          </li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="pages/gallery.html">Gallery</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="pages/about.html#contactUsForm">Contact</a>
+          </li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="pages/sponsors.html">Sponsor</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger button, hidden unless page is mobile sized -->
+      <button id="menuBtn" class="md:hidden text-2xl" type="button">
+        <img src="images/hamburger_icon.png">
+      </button>
+      <ul id="mobileMenu" class="hidden flex flex-col gap-3 mt-4 md:hidden bg-dim-white p-4 text-sm md:text-base w-full basis-full items-end">
+        <li><a class="nav-link hover:text-middle-purple transition" href="index.html">Home</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="pages/about.html">About Us</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="pages/events.html">Events</a>
+        </li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="pages/gallery.html">Gallery</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="pages/about.html#contactUsForm">Contact</a>
+        </li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="pages/sponsors.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ############################################################### -->
+  <!-- ######################## MAIN CONTENT ######################### -->
+  <main class="pb-20">
+    <!-- top hero section -->
+
+    <div class="w-full bg-deep-purple">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+
+        <div class="flex flex-col items-center text-center justify-center gap-8 px-12 py-16">
+          <h1 class="drop-cap-heading text-dim-white text-center [--heading-size:40px] md:[--heading-size:48px] lg:[--heading-size:80px]">
+            <span class="heading-line"><span class="drop-cap">A</span>pplications</span>
+            <span class="heading-line mt-4">Open Now</span>
+          </h1>
+          <p class="text-dim-white text-base">Apply soon and be a part of empowering</p>
+          <a href="pages/about.html#contactUsForm"
+            class="border-dim-white text-dim-white border border-solid rounded-md px-6 py-2 uppercase tracking-widest text-sm w-fit hover:bg-dim-white hover:text-deep-purple transition">
+            Waikato Women In STEM
+          </a>
+        </div>
+        <div class="relative mr-16">
+          <img src="images/layout-topRight_.png" alt="Dr. Maya Thompson" class="w-full h-full object-cover grayscale">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Carousel + CTA Section -->
+    <div
+      class="w-full bg-dim-white flex flex-col md:flex-row items-center justify-between px-8 py-6 gap-16 max-w-6xl mx-auto">
+
+      <!-- Carousel -->
+      <div class="flex items-center gap-2">
+        <!-- Prev Button -->
+        <button id="carouselPrev" class="text-deep-purple text-xl font-bold px-3 py-4">&#8249;</button>
+
+        <!-- Carousel Track -->
+        <div class="flex gap-2 overflow-x-auto scroll-smooth w-[340px] [&::-webkit-scrollbar]:hidden"
+          id="carouselTrack">
+          <img src="images/carousel_01.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <img src="images/carousel_02.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <img src="images/carousel_03.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <img src="images/carousel_04.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <!-- Purple "Past Cover Stars" center tile -->
+          <div
+            class="w-[100px] h-[120px] bg-deep-purple flex-shrink-0 flex flex-col items-center justify-center text-dim-white text-xs text-center font-bold px-2">
+            Past Cover Stars
+          </div>
+          <img src="images/carousel_05.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <img src="images/carousel_06.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+          <img src="images/carousel_07.png" class="w-[100px] h-[120px] object-cover grayscale flex-shrink-0">
+        </div>
+
+        <!-- Next Button -->
+        <button id="carouselNext" class="text-deep-purple text-xl font-bold px-3 py-4">&#8250;</button>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col items-center gap-2">
+        <a href="pages/sponsors.html"
+          class="bg-deep-purple text-dim-white px-6 py-2 rounded-md flex items-center gap-3 font-semibold hover:opacity-90 transition">
+          Be the Reason <span class="text-lg">&#8250;</span>
+        </a>
+        <p class="text-rich-black font-bold text-xl">More Women Succeed in STEM</p>
+      </div>
+
+    </div>
+    <!-- Cover Star Story -->
+    <div class="flex justify-center items-center">
+      <div class="w-full flex flex-col items-center">
+        <hr class="border-t-4 border-deep-purple rounded w-5/6 mx-auto mb-10" />
+        <h2 class="drop-cap-heading--alt text-deep-purple mb-5 [--heading-size:28px] md:[--heading-size:32px] lg:[--heading-size:48.43px]">
+          <span class="heading-line"><span class="drop-cap">C</span>over Star Story</span>
+        </h2>
+
+        <!-- Two-column layout: image left, text right -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 justify-center items-center w-full">
+          <div>
+            <img src="images/coverStarStoryImage.png" alt="coverStarStoryImage"
+              class="flex-shrink-0 object-contain rounded" />
+          </div>
+          <div class="flex-1">
+            <h1 class="font-body font-medium text-gray-900 mb-2 leading-snug text-2xl md:text-[39.06px]">
+              Driving the Future of Automotive Engineering
+            </h1>
+            <p class="text-gray-700 text-xs leading-relaxed font-light">
+              <span class="font-bold text-gray-900 text-sm">Dr. Maya Thompson</span>
+              is a mechanical engineering PhD and automotive engineer passionate about designing the future of
+              sustainable transportation. Based in New Zealand, she has spent more than a decade working in
+              vehicle
+              innovation, focusing on electric vehicle systems, energy efficiency, and advanced automotive
+              technologies. Growing up with a fascination for how machines worked, Maya pursued engineering
+              despite
+              being one of the few women in her classes. She later earned her PhD in Mechanical Engineering, where
+              her
+              research focused on improving battery performance and reducing energy waste in modern vehicles.
+              Today,
+              she works alongside international engineering teams to develop smarter and more environmentally
+              friendly
+              automotive solutions. Beyond her technical achievements, Dr. Thompson is a strong advocate for women
+              in
+              STEM. She regularly mentors young women interested in engineering and speaks at schools and
+              universities
+              across Waikato to encourage the next generation to pursue careers in science and technology. She
+              believes that innovation becomes stronger when diverse voices are included in the conversation. As
+              this
+              issue&apos;s Cover Star, Dr. Maya Thompson represents the creativity, resilience, and leadership
+              that
+              women
+              continue to bring to the STEM industry. Her journey is a reminder that with opportunity and support,
+              more women can help shape the future of engineering in New Zealand and around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- membership form -->
+    <hr class="border-t-4 border-deep-purple rounded w-5/6 mx-auto mb-10 mt-10" />
+    <div class="flex justify-center items-center min-h-screen w-full bg-dim-white">
+      <form class="uppercase text-sm tracking-wider font-bold flex flex-col items-center gap-2 w-full mx-8 md:w-1/2">
+        <h2
+          class="drop-cap-heading text-deep-purple text-center pb-4 [--heading-size:28px] md:[--heading-size:32px] lg:[--heading-size:48.43px]">
+          <span class="heading-line"><span class="drop-cap">M</span>embership</span>
+          <span class="heading-line mt-2">Application</span>
+        </h2>
+        <label for="name" class="self-start">Name</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text" id="name"
+          name="name">
+
+        <label for="title" class="self-start">Title</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text"
+          id="title" name="title">
+
+        <label for="discipline" class="self-start">Stem Discipline</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text"
+          id="discipline" name="discipline">
+
+        <label for="occupation" class="self-start">Occupation</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text"
+          id="occupation" name="occupation">
+
+        <label for="institution" class="self-start">Institution</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text"
+          id="institution" name="institution">
+
+        <label for="location" class="self-start">Location</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="text"
+          id="location" name="location">
+
+        <label for="email" class="self-start">Email</label>
+        <input class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full" type="email"
+          id="email" name="email">
+
+        <label for="statement" class="self-start">Statement of Interest</label>
+        <textarea class="border-middle-purple bg-dim-white border-solid border rounded-md p-1 w-full h-24"
+          id="statement" name="statement"></textarea>
+
+        <button
+          class="border-middle-purple text-middle-purple border-solid border rounded-md px-2 py-1.5 mt-2 self-start"
+          type="button">Submit
+          Application</button>
+      </form>
+    </div>
+
+  </main>
+  <!-- ############################################################### -->
+  <!-- ########################### FOOTER ############################ -->
+  <footer class="fixed bottom-0 w-screen bg-dim-white">
+    <div class="flex flex-col items-center justify-center py-6 gap-y-5">
+      <p class="text-deep-purple">
+        Shaping the Future of STEM, One Woman at a Time
+      </p>
+      <div class="flex items-center gap-x-12">
+        <a href="https://www.instagram.com/waikatowistem/"><img src="images/instagramIcon.svg" class="w-8 h-8"></a>
+        <a href="https://nz.linkedin.com/company/waikato-women-in-stem"><img src="images/linkedinIcon.svg"
+            class="w-8 h-8"></a>
+        <a href="https://www.facebook.com/WaikatoWomeninSTEM/"><img src="images/facebookIcon.svg" class="w-8 h-8"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

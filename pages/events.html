@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events Base</title>
+  <!-- Tailwind source-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind local config -->
+  <script src="../scripts/tailwindConfig.js"></script>
+
+  <!-- Navbar Hamburger Button Script -->
+  <script src="../scripts/hamburgerButton.js"></script>
+  <!-- Navbar button highlighting script -->
+  <script src="../scripts/navbarHighlighting.js"></script>
+
+  <!-- Google font api links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Google Font families URL -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- CSS for Headings and Carousel -->
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="bg-dim-white">
+  <!-- ############################################################### -->
+  <!-- ########################### HEADER ############################ -->
+  <header class="bg-dim-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center py-4">
+      <a href="../index.html" class="flex items-center">
+        <img src="../images/navbarLogoFull.svg" alt="Waikato Women In STEM" class="h-10 w-auto object-contain">
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 uppercase text-sm tracking-wider">
+          <li><a class="nav-link hover:text-middle-purple transition" href="../index.html">Home</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="about.html">About Us</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="events.html">Events</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="about.html#contactUsForm">Contact</a></li>
+          <li><a class="nav-link hover:text-middle-purple transition" href="sponsors.html">Sponsor</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger button, hidden unless page is mobile sized -->
+      <button id="menuBtn" class="md:hidden text-2xl" type="button">
+        <img src="../images/hamburger_icon.png">
+      </button>
+      <ul id="mobileMenu" class="hidden flex flex-col gap-3 mt-4 md:hidden bg-dim-white p-4 text-sm md:text-base w-full basis-full items-end">
+        <li><a class="nav-link hover:text-middle-purple transition" href="../index.html">Home</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="about.html">About Us</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="events.html">Events</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="about.html#contactUsForm">Contact</a></li>
+        <li><a class="nav-link hover:text-middle-purple transition" href="sponsors.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ======== MAIN CONTENT ======== -->
+
+  <main>
+    <div class="flex justify-end pr-12 pt-8">
+      <h1 class="drop-cap-heading text-deep-purple [--heading-size:40px] md:[--heading-size:48px] lg:[--heading-size:80px]">
+        <span class="heading-line"><span class="drop-cap">E</span>vents</span>
+      </h1>
+    </div>
+    <div class="grid grid-cols-1 mb-32">
+      <!-- coffee catchup -->
+      <div class="bg-pale-pink grid grid-cols-1 md:grid-cols-[1fr_2fr] my-6 mx-12">
+        <div class="m-6">
+          <img src="../images/coffeeCatchup.png" alt="coffeeCatchup">
+        </div>
+        <div class="my-6 mx-6">
+          <h2 class="drop-cap-heading--alt text-deep-purple [--heading-size:28px] md:[--heading-size:32px] lg:[--heading-size:48.43px]">
+            <span class="heading-line"><span class="drop-cap">C</span>offee Catch-up</span>
+          </h2>
+          <p class="m-6 mt-12">
+            Take a break, grab your favorite drink, and come connect with our amazing community of women in STEM.
+            Whether you want to chat, share ideas, or just unwind, this is your space. Enjoy the vouchers for the people
+            who manage to book a spot on time 😉
+          </p>
+          <p class="m-6">Don&apos;t forget to fill out the link in bio to let us know you&apos;re coming! 💻</p>
+          <p class="m-6">
+            Can&apos;t wait to see you there , spots are filling up fast so make sure you grab one before it&apos;s all
+            gone :&#41;
+          </p>
+          <p class="m-6 font-bold ">
+            1-2pm Wednesday <br> 1st April 2026 <br> Kahurangi Village Green
+          </p>
+        </div>
+      </div>
+
+      <!-- study sesh -->
+      <div class="bg-pale-pink grid grid-cols-1 md:grid-cols-[2fr_1fr] mx-12 my-6">
+        <div class="m-6">
+          <h2 class="drop-cap-heading--alt text-deep-purple [--heading-size:28px] md:[--heading-size:32px] lg:[--heading-size:48.43px]">
+            <span class="heading-line"><span class="drop-cap">S</span>tudy Sesh</span>
+          </h2>
+          <p class="m-6 mt-12">
+            Struggling with coursework? Or just want a chill place to study? Come down to MSB.1.20 on Wednesday, 25th
+            March, 1-2pm.
+          </p>
+          <p class="m-6">
+            Tutors will be available to help 1st and 2nd-year students studying in Engineering, Computer
+            Science and other various STEM subjects.
+          </p>
+          <p class="m-6">
+            Grab a buddy, come along and get ahead on your work!! There will be
+            free snacks and drinks to fuel your learning 😊
+          </p>
+          <br>
+          <p class="m-6 font-bold ">
+            1-2pm Wednesday <br> 25th March 2026 <br> MSB.1.20
+          </p>
+        </div>
+        <div class="m-6">
+          <img src="../images/studySesh.png" alt="studySesh">
+        </div>
+      </div>
+
+      <!-- Open night -->
+      <div class="bg-pale-pink grid grid-cols-1 md:grid-cols-[1fr_2fr] my-6 mx-12">
+        <div class="m-6">
+          <img src="../images/openNight.png" alt="openNIght">
+        </div>
+        <div class="m-6">
+          <h2 class="drop-cap-heading--alt text-deep-purple [--heading-size:28px] md:[--heading-size:32px] lg:[--heading-size:48.43px]">
+            <span class="heading-line"><span class="drop-cap">O</span>pen Night</span>
+          </h2>
+          <p class="m-6 mt-12">
+            WWISTEM Open Night 💜 <br> Come along for a fun evening with games, prizes, free food, and a chance to
+            meet
+            new
+            people.
+          </p>
+          <p class="m-6">
+            Make sure you participate in the games that our lovely team has planned for you for this exciting
+            night, and have a chance to win gongcha vouchers!! 🧋 ✨✨
+          </p>
+          <p class="m-6">
+            Sign up using the link in our bio!!
+          </p>
+          <br>
+          <p class="m-6 font-bold ">
+            6-9pm Thursday <br> 26th March 2026 <br> WSU Basement
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ############################################################### -->
+  <!-- ########################### FOOTER ############################ -->
+  <footer class="fixed bottom-0 w-screen bg-dim-white">
+    <div class="flex flex-col items-center justify-center py-6 gap-y-5">
+      <p class="text-deep-purple">
+        Shaping the Future of STEM, One Woman at a Time
+      </p>
+      <div class="flex items-center gap-x-12">
+        <a href="https://www.instagram.com/waikatowistem/"><img src="../images/instagramIcon.svg" class="w-8 h-8"></a>
+        <a href="https://nz.linkedin.com/company/waikato-women-in-stem"><img src="../images/linkedinIcon.svg"
+            class="w-8 h-8"></a>
+        <a href="https://www.facebook.com/WaikatoWomeninSTEM/"><img src="../images/facebookIcon.svg"
+            class="w-8 h-8"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
