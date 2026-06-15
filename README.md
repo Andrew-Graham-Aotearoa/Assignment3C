@@ -59,5 +59,6 @@ This is a static site — no build step required. Open `index.html` in a browser
 
 Built for Waikato Women in STEM as part of the University of Waikato DSIGN241 course.
 
+-Andrew Graham   Mia Wang   Rowan Lea   Seven Liu   Toby Childs
 - LinkedIn: [Waikato Women in STEM](https://www.linkedin.com/company/waikato-women-in-stem/)
 - Instagram: [@waikatowistem](https://www.instagram.com/waikatowistem/)
